@@ -4,6 +4,7 @@ import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import Image from '../components/image'
 import SEO from '../components/seo'
+import BMC from '../images/BMC.jpg';
 
 const IndexPage = () => (
   <Layout>
@@ -13,6 +14,8 @@ const IndexPage = () => (
     <p>Now go build something great.</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
+
+      <img src={BMC} alt="BMC" />
     </div>
     <Link to="/about">About</Link>
 
