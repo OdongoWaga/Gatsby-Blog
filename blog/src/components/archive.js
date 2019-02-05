@@ -7,18 +7,30 @@ import { StaticQuery, graphql } from "gatsby"
 const Archive = () => (
   <StaticQuery
     query={graphql`
-      query  {
-        site {
-          siteMetadata {
-            title
+    query BlogPostArchive{
+  
+        allMarkdownRemark{
+        edges{
+          node{
+            frontmatter{
+              title
+                slug
+              
+            }
           }
         }
       }
+    }
     `}
-    render={data => (
+    render={({allMarkdownRemark}) => (
       <>
        <aside>
         <h3>Archive </h3>
+        {allMarkdownRemark.edges.map(edge => (
+            <li>
+                {edge.node.frontmatter.title}
+            </li>
+        ))}
        </aside>
        
       </> 
