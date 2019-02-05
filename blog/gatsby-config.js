@@ -28,12 +28,13 @@
       },
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: 'gatsby-source-filesystem',  
       options: {
         path: `${__dirname}/src/posts`,
         name: 'posts'
       }
-    }
+    },
+    'gatsby-transformer-remark'
      
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
