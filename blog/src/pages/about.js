@@ -1,15 +1,21 @@
-import React, { Component } from 'react';
+import React from 'react'
 
-import Layout from "../components/layout"
+import Layout from '../components/layout'
 
-const About = () => (
-        <Layout>
-      <div>
-        <h1>About Us </h1>
-        <p>A fairly successful career in sports I did a lot of modeling work in the mid-80s I'm really good at that means I am wonderful. I'm too honest beekeeping I'm an enormous man-child staying up late snapchat, complete lack of shame on the first date that's what she said lol crossfit. When I get drunk I grow a creepy mustache every February see, I told you I am extremely experienced and talented I should have grown up in the 40s performance art.   </p>
-      </div>
-        </Layout>
-    )
-  
+const About = ({location}) => (
+  <Layout location={location}>
+    <div>
+      <h1>About Us</h1>
+      <p>
+        Lorem ipsum dolor amet disrupt shabby chic sriracha forage yr green
+        juice kinfolk ennui taxidermy godard mlkshk affogato art party 8-bit
+        cornhole. Thundercats before they sold out asymmetrical next level
+        disrupt pok pok readymade pabst. Tousled poutine tote bag, kickstarter
+        mlkshk pickled kitsch. Fam ramps literally, kinfolk humblebrag taiyaki
+        letterpress locavore food truck keytar +1 sriracha yr keffiyeh.
+      </p>
+    </div>
+  </Layout>
+)
 
-export default About; 
+export default About
