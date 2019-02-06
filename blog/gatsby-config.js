@@ -7,6 +7,8 @@
   plugins: [
     `gatsby-plugin-react-helmet`,
     'gatsby-plugin-styled-components',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -33,6 +35,13 @@
       options: {
         path: `${__dirname}/src/posts`,
         name: 'posts'
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',  
+      options: {
+        path: `${__dirname}/src/images`,
+        name: 'images'
       }
     },
     'gatsby-transformer-remark'
